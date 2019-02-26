@@ -1,0 +1,10 @@
+# the google oauth and the python venv, we exclude
+oauth/*
+gatty/data/oauth
+env/*
+
+# no caches
+__pycache__/
+gatty/__pycache__/
+*.pyc
+
