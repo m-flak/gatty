@@ -8,6 +8,7 @@ from google.assistant.library import Assistant
 
 import gatty
 import gatty.oauth
+import gatty.goog
 
 if gatty.oauth.check_for_credfiles() is not True:
 	print("Please follow the Google Assistant SDK Tutorial before attempting to use this program.")
@@ -18,6 +19,8 @@ special_exit = "exit - exits"
 
 print("Welcome to gatty {}!!!".format(gatty.__version__))
 print("The following commands are special:\n\t\t{}\n\t\t".format(special_exit))
+
+gatty.goog.probe_google()
 
 session = PromptSession(message="Say something: ")
 
